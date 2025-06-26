@@ -142,6 +142,10 @@ img {
   text-transform: uppercase;
 }
 
+.title span {
+  color: var(--textAccept_color);
+}
+
 /* HEADER_start============== */
 
 .header_inner {
@@ -173,7 +177,7 @@ img {
 }
 
 .header_menu_link {
-  font-family: 'Ubuntu_400';
+  font-family: "Ubuntu_400";
   font-size: 16px;
   line-height: 1;
 }
@@ -1298,7 +1302,7 @@ img {
   gap: 5px;
 }
 
-.footer_center_soc .mobile {
+.footer_center_soc.mobile {
   display: none;
 }
 
@@ -1343,6 +1347,165 @@ img {
   font-family: "Ubuntu_400";
   font-size: 14px;
   color: #fff;
+}
+
+/* footer-END======================== */
+
+/* footer-END======================== */
+
+.companyTop {
+  margin-bottom: 100px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.companyTop_bg {
+  position: absolute;
+  top: 0;
+  left: 11%;
+  z-index: -1;
+}
+
+.companyTop_title {
+  font-family: "Cyrvetica";
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.companyTop_inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 150px;
+}
+
+.companyTop_item_title {
+  max-width: 590px;
+  margin-bottom: 14px;
+  margin-top: 20px;
+}
+
+.companyTop_item_text {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #0c2434;
+  max-width: 440px;
+}
+
+.companyTop_item_topText {
+  font-family: "Cyrvetica";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.companyTop_item_bottomText {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.companyTop_bottomMob {
+  display: none;
+}
+
+.companyTop_bottom_item {
+  /* display: flex; */
+  /* gap: 30px; */
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--text_color);
+  transition: all 0.45s;
+  margin-top: 24px;
+}
+
+.companyTop_bottom_item:last-child {
+  border-bottom: none;
+}
+
+.companyTop_bottom_item_title {
+  max-width: 250px;
+  width: 100%;
+  font-family: "Cyrvetica";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.companyTop_bottom_item_content {
+  position: relative;
+  width: 100%;
+}
+
+.companyTop_bottom_item_img {
+  transition: all 0.45s;
+  width: 24px;
+  height: 14px;
+}
+
+.companyTop_bottom_item_content p {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #0c2434;
+  max-width: 430px;
+  margin-bottom: 18px;
+}
+
+.companyTop_bottom_item_content_list {
+  max-width: 490px;
+  margin-left: 40%;
+  transform: translateX(-0%);
+}
+
+.companyTop_bottom_item_content_list li {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #0c2434;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.companyTop_bottom_item_content_list li img {
+  width: 22px;
+  height: 22px;
+}
+
+.companyTop_bottom_item.active .companyTop_bottom_item_img {
+  transform: rotate(180deg);
+}
+
+.companyTop_bottom_item_head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.companyTop_bottom_item_text {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #0c2434;
+  max-width: 430px;
+  margin-bottom: 18px;
+}
+
+.companyTop_bottom_item_wrapper {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.companyTop_bottom_item_content_list
+  li
+  h5.companyTop_bottom_item_content_list_title {
+  font-family: "Ubuntu_700";
+  font-size: 18px;
+  color: var(--text_color);
+}
+
+.companyTop_bottom_item_content_list li p {
+  padding-top: 5px;
 }
 
 /* footer-END======================== */
@@ -1423,6 +1586,10 @@ img {
   .footer_wrapper {
     padding: 20px;
   }
+
+  .companyTop_bottom_item_content_list {
+    transform: translateX(-3%);
+  }
 }
 
 @media (max-width: 950px) {
@@ -1496,16 +1663,16 @@ img {
     justify-content: center;
   }
 
-.header_social_time p {
+  .header_social_time p {
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 5px;
-}
+  }
 
-.header_social_tell {
-    font-family: 'Ubuntu_700';
-}
+  .header_social_tell {
+    font-family: "Ubuntu_700";
+  }
 
   .header_btn {
     height: 40px;
@@ -1533,7 +1700,7 @@ img {
   .header_logo_burger img {
     width: 75px;
     height: 43px;
-}
+  }
 
   .mobMenu {
     padding-top: 100px;
@@ -1576,6 +1743,40 @@ img {
   .header_social_box a {
     width: 29px;
     height: 29px;
+  }
+
+  .companyTop_item_title {
+    max-width: 400px;
+    font-size: 20px;
+  }
+
+  .companyTop_item_text {
+    font-size: 14px;
+    max-width: 370px;
+  }
+
+  .companyTop_bottom_item_title {
+    max-width: 150px;
+    font-size: 16px;
+  }
+
+  .companyTop_bottom_item_text {
+    font-size: 12px;
+    max-width: 330px;
+  }
+
+  .companyTop_bottom_item_content_list li p {
+    font-size: 12px;
+  }
+
+  .companyTop_bottom_item_content_list
+    li
+    h5.companyTop_bottom_item_content_list_title {
+    font-size: 14px;
+  }
+
+  .companyTop {
+    padding-top: 150px;
   }
 }
 
@@ -1688,6 +1889,77 @@ img {
   .calc_bg {
     display: none;
   }
+
+  .companyTop_item_topText {
+    font-size: 26px;
+  }
+
+  .companyTop_item_bottomText {
+    font-size: 12px;
+  }
+
+  .companyTop_bg {
+    top: 50px;
+    left: 1%;
+  }
+
+  .companyTop_bottom {
+    display: none;
+  }
+
+  .companyTop_bottomMob {
+    display: block;
+  }
+
+  .companyTop_bottomMob_item {
+    padding-left: 40px;
+    padding-bottom: 26px;
+    margin-right: 40px;
+    margin-top: 26px;
+    border-bottom: 1px solid var(--text_color);
+  }
+
+  .companyTop_bottom_item_title {
+    max-width: 200px;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .companyTop_bottom_item_text {
+    font-size: 14px;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .companyTop_bottom_item_content_list {
+    margin: 0 auto;
+    max-width: 300px;
+    transform: none;
+  }
+
+  .companyTop_bottom_item_content_list li p {
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .companyTop_bottom_item_content_list li span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: var(--text_color);
+  }
+
+  .companyTop_bottom_item_content_list li {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1736,9 +2008,56 @@ img {
   }
 }
 
+@media (max-width: 550px) {
+  .companyTop_title {
+    text-align: center;
+  }
+
+  .companyTop_inner {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .companyTop_item_title {
+    max-width: 230px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 20px;
+  }
+
+  .companyTop_item_text {
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  .companyTop_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .companyTop_item_topText {
+    font-size: 36px;
+  }
+
+  .companyTop_item_bottomText {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 500px) {
   .top_bg {
     display: none;
+  }
+
+  .companyTop_bg {
+    top: 220px;
+    left: 0;
+    width: 100%;
   }
 
   .top {

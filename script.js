@@ -132,3 +132,44 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// COMPANY_accordion===============
+
+document.querySelectorAll('.companyTop_bottom_item_head').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+    const wrapper = item.querySelector('.companyTop_bottom_item_wrapper');
+    const isOpen = item.classList.contains('active');
+
+    // Закрыть все
+    document.querySelectorAll('.companyTop_bottom_item').forEach(i => {
+      i.classList.remove('active');
+      const w = i.querySelector('.companyTop_bottom_item_wrapper');
+      w.style.height = 0;
+    });
+
+    // Открыть текущий, если он был закрыт
+    if (!isOpen) {
+      item.classList.add('active');
+      wrapper.style.height = wrapper.querySelector('.companyTop_bottom_item_content_list').scrollHeight + 'px';
+    }
+  });
+});
+
+
+
+// document.querySelectorAll('.companyTop_bottom_item').forEach(item => {
+//   item.addEventListener('click', () => {
+//     item.classList.toggle('active');
+
+//     // Закрыть все
+//     // document.querySelectorAll('.companyTop_bottom_item').forEach(i => i.classList.remove('active'));
+
+//     // // Открыть текущий, если был закрыт
+//     // if (!isActive) {
+//     //   header.classList.add('active');
+//     // }
+//   });
+// });
+
+
+
