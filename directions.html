@@ -14,18 +14,18 @@
     <header class="header">
         <div class="container">
             <div class="header_inner">
-                <a class="header_logo" href="#">
+                <a class="header_logo" href="index.html">
                     <img src="assets/images/header_logo.svg" alt="logo">
                 </a>
                 <div class="header_item">
                     <div class="header_menu">
-                        <a href="" class="header_menu_link header_menu_list">
+                        <a href="directions.html" class="header_menu_link header_menu_list">
                             Транспорт
                         </a>
                         <a href="" class="header_menu_link header_menu_list">
                             Услуги
                         </a>
-                        <a href="" class="header_menu_link">
+                        <a href="company.html" class="header_menu_link">
                             О компании
                         </a>
                         <a href="" class="header_menu_link">
@@ -131,10 +131,872 @@
 
     <main>
         <section class="directions">
-            
+            <div class="container">
+                <div class="directions_bg1">
+                    <img src="assets/images/directions/directions_bg1.png" alt="">
+                </div>
+                <div class="directions_bg2">
+                    <img src="assets/images/directions/directions_bg2.png" alt="">
+                </div>
+                <div class="directions_bgMob">
+                    <img src="assets/images/directions/directions_bgMob.png" alt="">
+                </div>
+                <div class="directions_inner">
+                    <h1 class="directions_title title">
+                        По направлениям
+                    </h1>
+                    <h3 class="directions_inner_title title">
+                        Междугородние перевозки
+                    </h3>
+                    <p class="directions_inner_subtitle title">
+                        Саратов — <span>Санкт-Петербург</span>
+                    </p>
+                    <p class="directions_inner_text">
+                        от 100 кг до 20 тонн без задержек с фиксированной стоимостью
+                    </p>
+                </div>
+
+            </div>
         </section>
 
-        
+        <section class="howWeWork">
+            <div class="container">
+                <h3 class="howWeWork_title">
+                    Для вас отдельная машина, ваш маршрут или формат сборного груза
+                </h3>
+                <div class="howWeWork_inner">
+                    <div class="howWeWork_item">
+                        <h4 class="howWeWork_item_title">
+                            Честно
+                        </h4>
+                        <p class="howWeWork_item_text">
+                            стоимость без скрытых накруток и платежей
+                        </p>
+                    </div>
+                    <div class="howWeWork_item blue">
+                        <h4 class="howWeWork_item_title">
+                            Выгодно
+                        </h4>
+                        <p class="howWeWork_item_text">
+                            предложим самые выгодные варианты под ваш запрос
+                        </p>
+                    </div>
+                    <div class="howWeWork_item">
+                        <h4 class="howWeWork_item_title">
+                            Быстро
+                        </h4>
+                        <p class="howWeWork_item_text">
+                            Без простоев и задержек
+                        </p>
+                    </div>
+                    <div class="howWeWork_item blue">
+                        <h4 class="howWeWork_item_title">
+                            Безопасно
+                        </h4>
+                        <p class="howWeWork_item_text">
+                            грузы застрахованы
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="yourData">
+            <div class="container">
+                <div class="yourData_bg">
+                    <img src="assets/images/directions/yourData_bg.png" alt="">
+                </div>
+                <div class="yourData_inner">
+                    <h3 class="yourData_title title">
+                        Оставьте <span>данные</span> о перевозке
+                    </h3>
+                    <p class="yourData_text">
+                        и наш менеджер свяжется с Вами для точного просчета!
+                    </p>
+                    <form class="yourData_form" id="yourData_form">
+                        <div class="yourData-select-wrapper">
+                            <div class="yourData-select-display">Откуда везем</div>
+                            <div class="calc_arrow_box">
+                                <img src="assets/images/calc_arrow.svg" alt="">
+                            </div>
+                            <div class="yourData-select-options">
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                            </div>
+                            <input type="hidden" id="from" name="откуда" />
+                        </div>
+                        <div class="yourData-select-wrapper">
+                            <div class="yourData-select-display">Куда везем</div>
+                            <div class="calc_arrow_box">
+                                <img src="assets/images/calc_arrow.svg" alt="">
+                            </div>
+                            <div class="yourData-select-options">
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                                <div class="option" data-value="moscow">Москва</div>
+                                <div class="option" data-value="spb">Санкт-Петербург</div>
+                                <div class="option" data-value="ekb">Екатеринбург</div>
+                            </div>
+                            <input type="hidden" id="to" name="куда" />
+                        </div>
+                        <div class="yourData-select-wrapper">
+                            <div class="yourData-select-display">Тип груза</div>
+                            <div class="calc_arrow_box">
+                                <img src="assets/images/calc_arrow.svg" alt="">
+                            </div>
+                            <div class="yourData-select-options">
+                                <div class="option" data-value="corob">Коробка</div>
+                                <div class="option" data-value="pol">Полет</div>
+                                <div class="option" data-value="cont">Контейнер</div>
+                                <div class="option" data-value="puck">Пакет</div>
+                                <div class="option" data-value="drugoe">Другое</div>
+                            </div>
+                            <input type="hidden" id="tip" name="куда" />
+                        </div>
+                        <input type="text" id="yourData_phone" name="телефон" placeholder="Контактный телефон">
+                        <input type="text" id="yourData_weight" name="вес" placeholder="Вес груза">
+                        <input type="text" id="yourData_volume" name="объем" placeholder="Объем груза">
+                        <div class="yourData_agreement">
+                            <input type="checkbox" id="info" name="info" checked>
+                            <label for="info">
+                                Даю свое согласие на обработку
+                                <a href="">
+                                    персональных данных
+                                </a>
+                                и принимаю условия
+                                <a href="">
+                                    политики конфиденциальности
+                                </a>
+                            </label>
+                        </div>
+                        <button id="yourData_btn" type="submit" class="yourData_btn">Быстрый расчет</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="convenience">
+            <h3 class="convenience_title title">
+                Почему удобно работать с нами
+            </h3>
+            <div class="convenience_item">
+                <div class="convenience_item_head">
+                    <h4 class="convenience_item_title">
+                        Грузоперевозки Воронеж — Саратов: быстро и надежно
+                    </h4>
+                    <div class="companyTop_bottom_item_img">
+                        <img src="assets/images/company/companyTop_bottom_item_content_svg.svg" alt="">
+                    </div>
+                </div>
+                <div class="convenience_item_wrapper">
+                    <div class="convenience_item_content_list">
+                        <div class="convenience_item_text">
+                            <p>
+                                Компания по грузоперевозкам ООО «РТК» предоставляет качественное обслуживание
+                                транспортировок
+                                груза по маршруту Воронеж — Саратов.
+                            </p>
+                            <p>
+                                Работа с нами - это удобная цена, грамотная логистика, разнообразный автопарк,
+                                оперативное
+                                оформление заявок. Благодаря нам ваш груз будет доставлен в любую точку России.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="convenience_item">
+                <div class="convenience_item_head">
+                    <h4 class="convenience_item_title">
+                        Преимущество перевозок Тамбов — Саратов с нами
+                    </h4>
+                    <div class="companyTop_bottom_item_img">
+                        <img src="assets/images/company/companyTop_bottom_item_content_svg.svg" alt="">
+                    </div>
+                </div>
+                <div class="convenience_item_wrapper">
+                    <div class="convenience_item_content_list">
+                        <div class="convenience_item_text">
+                            <p>
+                                Компания ООО «РТК» работает в сфере грузоперевозок с 2007 года. За это время мы
+                                заслужили репутацию ответственных и надежных специалистов.
+                            </p>
+                        </div>
+                        <div class="convenience_item_listBox">
+                            <p>
+                                Сотрудничество с нами гарантирует вам:
+                            </p>
+                            <ul>
+                                <li>
+                                    Качественное выполнение заказов;
+                                </li>
+                                <li>
+                                    Доступ к информации о перевозчике (стаж работы, отзывы);
+                                </li>
+                                <li>
+                                    Квалифицированных логистов, которые проработают весь маршрут для наибольшей выгоды
+                                    для вас;
+                                </li>
+                                <li>
+                                    Разнообразный перечень транспорта от ГАЗэлей до многотонных фур;
+                                </li>
+                                <li>
+                                    Сопровождение во время поездки во избежании ошибок.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="convenience_item">
+                <div class="convenience_item_head">
+                    <h4 class="convenience_item_title">
+                        Цена грузоперевозки по маршруту Воронеж — Саратов
+                    </h4>
+                    <div class="companyTop_bottom_item_img">
+                        <img src="assets/images/company/companyTop_bottom_item_content_svg.svg" alt="">
+                    </div>
+                </div>
+                <div class="convenience_item_wrapper">
+                    <div class="convenience_item_content_list">
+                        <div class="convenience_item_listBox">
+                            <p>
+                                Транспортировка груза из одной точки страны в другую начинается с того, что наши
+                                специалисты по логистике анализируют следующие факторы:
+                            </p>
+                            <ul>
+                                <li>
+                                    Время в пути и километраж. Расстояние от Воронежа до Саратова составляет более 500
+                                    км, а среднее время около 6 часов;
+                                </li>
+                                <li>
+                                    Грузовой автомобиль, на котором будет происходить перевозка;
+                                </li>
+                                <li>
+                                    Услуги экспедиторов. Мы обязуемся наблюдать за всеми этапами грузоперевозки, чтобы
+                                    избежать каких-либо нарушений;
+                                </li>
+                                <li>
+                                    Погрузка и разгрузка товара. В цену входит размер грузка, его вес, объем и то в
+                                    упаковке ли он или в контейнере;
+                                </li>
+                                <li>
+                                    Особенности дороги, по которой будет проходить перевозка. От того какого качества
+                                    дорога из Воронежа в Саратов, какие у нее особенности и дефекты будет зависеть
+                                    окончательная цена.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="convenienceMob">
+                <div class="convenienceMob_item">
+                    <h4 class="convenienceMob_item_title">
+                        Грузоперевозки Воронеж — Саратов: быстро и надежно
+                    </h4>
+                    <p class="convenienceMob_text">
+                        Компания по грузоперевозкам ООО «РТК» предоставляет качественное обслуживание транспортировок
+                        груза
+                        по маршруту Воронеж — Саратов.
+                        Работа с нами - это удобная цена, грамотная логистика, разнообразный автопарк, оперативное
+                        оформление заявок. Благодаря нам ваш груз будет доставлен в любую точку России.
+                    </p>
+                </div>
+                <div class="convenienceMob_item">
+                    <h4 class="convenienceMob_item_title">
+                        Преимущество перевозок
+                        Тамбов — Саратов с нами
+                    </h4>
+                    <p class="convenienceMob_text">
+                        Компания ООО «РТК» работает в сфере грузоперевозок с 2007 года. За это время мы заслужили
+                        репутацию ответственных и надежных специалистов.
+                    </p>
+                    <h5 class="convenienceMob_item_subtitle">
+                        Сотрудничество с нами гарантирует вам:
+                    </h5>
+                    <ul>
+                        <li>
+                            <span></span>
+                            Качественное выполнение заказов;
+                        </li>
+                        <li>
+                            <span></span>
+                            Доступ к информации о перевозчике (стаж работы, отзывы);
+                        </li>
+                        <li>
+                            <span></span>
+                            Квалифицированных логистов, которые проработают весь маршрут для наибольшей выгоды для вас;
+                        </li>
+                        <li>
+                            <span></span>
+                            Разнообразный перечень транспорта от ГАЗэлей до многотонных фур;
+                        </li>
+                        <li>
+                            <span></span>
+                            Сопровождение во время поездки во избежании ошибок.
+                        </li>
+                    </ul>
+                </div>
+                <div class="convenienceMob_item">
+                    <h4 class="convenienceMob_item_title">
+                        Цена грузоперевозки по маршруту Воронеж — Саратов
+                    </h4>
+                    <p class="convenienceMob_text">
+                        Транспортировка груза из одной точки страны в другую начинается с того, что наши специалисты по
+                        логистике анализируют следующие факторы:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <span></span>
+                            Время в пути и километраж. Расстояние от Воронежа до Саратова составляет более 500 км, а
+                            среднее время около 6 часов;
+                        </li>
+                        <li>
+                            <span></span>
+                            Грузовой автомобиль, на котором будет происходить перевозка;
+                        </li>
+                        <li>
+                            <span></span>
+                            Услуги экспедиторов. Мы обязуемся наблюдать за всеми этапами грузоперевозки, чтобы избежать
+                            каких-либо нарушений;
+                        </li>
+                        <li>
+                            <span></span>
+                            Погрузка и разгрузка товара. В цену входит размер грузка, его вес, объем и то в упаковке ли
+                            он или в контейнере;
+                        </li>
+                        <li>
+                            <span></span>
+                            Особенности дороги, по которой будет проходить перевозка. От того какого качества дорога из
+                            Воронежа в Саратов, какие у нее особенности и дефекты будет зависеть окончательная цена.
+                        </li>
+                    </ul>
+                </div>
+                <div class="convenienceMob_item">
+                    <h4 class="convenienceMob_item_title">
+                        Почему ООО «РТК» лучший выбор для перевозок
+                    </h4>
+                    <p class="convenienceMob_text">
+                        История нашей работы насчитывает
+                        до 570 довольных клиентов, более
+                        850 тонн перевозимого груза в месяц. Тщательная аналитика маршрута, выгодная цена, разнообразный
+                        выбор автомобилей для грузоперевозки -
+                        это вещи, призванные сделать вашу жизнь прощу.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cargo">
+            <div class="cargo_bg1">
+                <img src="assets/images/directions/cargo_bg1.png" alt="">
+            </div>
+            <div class="cargo_bg2">
+                <img src="assets/images/directions/cargo_bg2.png" alt="">
+            </div>
+            <div class="container">
+                <h3 class="cargo_title title">
+                    Организуем перевозку сборных и отдельных грузов
+                </h3>
+                <p class="cargo_subtitle">
+                    Работаем с юридическими и физическими лицами
+                </p>
+                <div class="cargo_inner">
+                    <div class="cargo_item">
+                        <p>
+                            Перевозка сборных грузов по РФ
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="cargo_item">
+                        <p>
+                            Квартирные и дачные переезды
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="cargo_item">
+                        <p>
+                            Офисные переезды
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="cargo_item">
+                        <p>
+                            Перевозка грузов массой от 300 кг до 20 тонн
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="cargo_item">
+                        <p>
+                            Перевозка оборудования
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                    <div class="cargo_item">
+                        <p>
+                            Междугородние грузоперевозки по РФ отдельной машиной
+                        </p>
+                        <a href="">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="transport">
+            <div class="container">
+                <h3 class="transport_title">
+                    Подберем транспорт
+                </h3>
+                <p class="transport_text">
+                    с идеальной вместимостью под ваш груз - сэкономим ваши деньги и время
+                </p>
+
+                <div class="transport_inner">
+                    <div class="swiper-wrapper">
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div class="transport_item swiper-slide">
+                            <p class="transport_item_text">
+                                Вместимость
+                            </p>
+                            <p class="transport_item_subText">
+                                до 1,5 тонн
+                                <span class="transport_item_text">
+                                    ГАЗель
+                                </span>
+                            </p>
+                            <div class="transport_item_img">
+                                <img src="assets/images/transport_item_img.png" alt="">
+                            </div>
+                            <a href="#" class="transport_item_link">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="transport_inner_btnBox">
+                    <div class="transport_inner_btnPrev">
+                        <img src="assets/images/trust_slider_btnPrew.svg" alt="">
+                    </div>
+                    <div class="transport_inner_btnNext">
+                        <img src="assets/images/trust_slider_btnNext.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="transport_bottomText">
+                    Крупный транспорт различной грузоподъемности
+                </p>
+            </div>
+
+        </section>
+
+        <section class="mainAbout">
+            <div class="mainAbout_bg">
+                <img src="assets/images/mainAbout_bg.svg" alt="">
+            </div>
+            <h3 class="mainAbout_title">
+                ООО «РТК» – надежные грузоперевозки
+                <span>по всей России</span>
+            </h3>
+            <p class="mainAbout_text">
+                Мы – транспортно-экспедиционная компания из Саратова, специализирующаяся на организации грузоперевозок
+                любого масштаба. С 2010 года мы помогаем бизнесу и частным клиентам с быстрой и безопасной доставкой
+                грузов
+                по всей России.
+            </p>
+            <div class="mainAbout_inner">
+                <div class="mainAbout_item">
+                    <p class="mainAbout_topText">
+                        ХХХХ+
+                    </p>
+                    <p class="mainAbout_bottomText">
+                        довольных клиентов
+                    </p>
+                </div>
+                <div class="mainAbout_item">
+                    <p class="mainAbout_topText">
+                        1600+
+                    </p>
+                    <p class="mainAbout_bottomText">
+                        километров в день
+                    </p>
+                </div>
+                <div class="mainAbout_item">
+                    <p class="mainAbout_topText">
+                        900+
+                    </p>
+                    <p class="mainAbout_bottomText">
+                        тонн в месяц
+                    </p>
+                </div>
+            </div>
+            <a href="" class="mainAbout_link">Подрбнее о компании</a>
+        </section>
+
+        <section class="stages">
+            <div class="stages_bg1">
+                <img src="assets/images/stages_bg1.png" alt="">
+            </div>
+            <div class="stages_bg2">
+                <img src="assets/images/stages_bg2.png" alt="">
+            </div>
+            <div class="stages_bg2_mob">
+                <img src="assets/images/stages_bg2_mob.png" alt="">
+            </div>
+            <div class="stages_bg3">
+                <img src="assets/images/stages_bg3.png" alt="">
+            </div>
+            <div class="stages_wrapper">
+                <h3 class="stages_title">
+                    Этапы совместной работы
+                </h3>
+                <p class="stages_subTitle">
+                    Ежедневно мы выходим на маршрут, чтобы выполнить Вашу задачу по транспортировке груза с четким
+                    соблюдением всех требований и пожеланий
+                </p>
+                <div class="stages_inner">
+                    <div class="stages_item blue">
+                        <h4>
+                            01
+                        </h4>
+                        <p>
+                            Вы оставляете заявку
+                            по телефону или на сайте
+                        </p>
+                    </div>
+                    <div class="stages_item">
+                        <h4>
+                            02
+                        </h4>
+                        <p>
+                            Мы оперативно рассчитываем стоимость, подбираем транспорт
+                        </p>
+                    </div>
+                    <div class="stages_item">
+                        <h4>
+                            03
+                        </h4>
+                        <p>
+                            Организуем перевозку «под ключ»
+                        </p>
+                    </div>
+                    <div class="stages_item blue">
+                        <h4>
+                            04
+                        </h4>
+                        <p>
+                            Закрепляем цену в договоре –
+                            она не изменится
+                        </p>
+                    </div>
+                    <div class="stages_item blue">
+                        <h4>
+                            05
+                        </h4>
+                        <p>
+                            Вы оставляете заявку
+                            по телефону или на сайте
+                        </p>
+                    </div>
+                    <div class="stages_item">
+                        <h4>
+                            06
+                        </h4>
+                        <p>
+                            Вы оставляете заявку
+                            по телефону или на сайте
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="application">
+            <div class="application_wrapper">
+                <div class="application_bg">
+                    <img src="assets/images/application_bg.png" alt="">
+                </div>
+                <div class="application_inner">
+                    <h3 class="application_title">
+                        Оставьте
+                        <span>
+                            заявку
+                        </span>
+                    </h3>
+                    <p class="application_subtitle">
+                        и убедитесь, что грузоперевозки могут быть простыми и прозрачными!
+                    </p>
+                    <form class="feedback">
+                        <input class="feedback_name" type="text" placeholder="Ваше имя">
+                        <input class="feedback_name" type="tel" placeholder="+7 (900) 000-00-00">
+                        <div class="feedback_agreement">
+                            <input type="checkbox" id="info" name="info" checked>
+                            <label for="info">
+                                Даю свое согласие на обработку
+                                <a href="">
+                                    персональных данных
+                                </a>
+                                и принимаю условия
+                                <a href="">
+                                    политики конфиденциальности
+                                </a>
+                            </label>
+                        </div>
+                        <button class="feedback_btn btn">Оставить заявку</button>
+                    </form>
+                    <div class="application_item">
+                        <p class="application_item_text">
+                            Или напишите/позвоните напрямую
+                        </p>
+                        <div class="application_item_box">
+                            <a class="application_item_box_tel" href="+79271019071">8(927)101-90-71</a>
+                            <a class="application_item_box_svg" href="">
+                                <img src="assets/images/application_item_tel.svg" alt="">
+                            </a>
+                            <a class="application_item_box_svg" href="">
+                                <img src="assets/images/application_item_telegr.svg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="application_item_time">
+                            <p>
+                                с
+                                <span>10:00</span>
+                                до
+                                <span>20:00</span>
+                                <br>
+                                без выходных
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust">
+            <h3 class="trust_title">
+                Заслуживаем
+                <span>максимальное доверие</span>
+            </h3>
+            <p class="trust_subtitle">
+                Благодарственные письма от довольных клиентов
+            </p>
+            <div class="swiper trust_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="trust_slide">
+                            <h4 class="trust_slide_title">
+                                ОАО Саратовский завод «Серп и молот»
+                            </h4>
+                            <div class="trust_slide_img">
+                                <img src="assets/images/trust_slide_img.png" alt="">
+                            </div>
+                            <a href="" class="trust_slide_link">
+                                Читать продолжение
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trust_slider_btnBox">
+                <div class="trust_slider_btnPrew">
+                    <img src="assets/images/trust_slider_btnPrew.svg" alt="">
+                </div>
+                <div class="trust_slider_btnNext">
+                    <img src="assets/images/trust_slider_btnNext.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class="footer">

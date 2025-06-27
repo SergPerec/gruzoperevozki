@@ -30,7 +30,6 @@ document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-
     document.getElementById('calcBtn').addEventListener('click', function (e) {
         e.preventDefault(); // отменяем отправку формы
 
@@ -88,9 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
         loop: true,
          breakpoints: {
-            // 1200: {
-            //     slidesPerView: 4,
-            // },
             992: {
                 slidesPerView: 4,
             },
@@ -150,26 +146,62 @@ document.querySelectorAll('.companyTop_bottom_item_head').forEach(header => {
     // Открыть текущий, если он был закрыт
     if (!isOpen) {
       item.classList.add('active');
-      wrapper.style.height = wrapper.querySelector('.companyTop_bottom_item_content_list').scrollHeight + 'px';
+      wrapper.style.height = wrapper.querySelector('.companyTop_bottom_item_content_list').scrollHeight + 10 + 'px';
     }
   });
 });
 
 
+// convenience_accordion===============
 
-// document.querySelectorAll('.companyTop_bottom_item').forEach(item => {
-//   item.addEventListener('click', () => {
-//     item.classList.toggle('active');
+document.querySelectorAll('.convenience_item_head').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+    const wrapper = item.querySelector('.convenience_item_wrapper');
+    const isOpen = item.classList.contains('active');
 
-//     // Закрыть все
-//     // document.querySelectorAll('.companyTop_bottom_item').forEach(i => i.classList.remove('active'));
+    // Закрыть все
+    document.querySelectorAll('.convenience_item').forEach(i => {
+      i.classList.remove('active');
+      const w = i.querySelector('.convenience_item_wrapper');
+      w.style.height = 0;
+    });
 
-//     // // Открыть текущий, если был закрыт
-//     // if (!isActive) {
-//     //   header.classList.add('active');
-//     // }
-//   });
-// });
+    // Открыть текущий, если он был закрыт
+    if (!isOpen) {
+      item.classList.add('active');
+      wrapper.style.height = wrapper.querySelector('.convenience_item_content_list').scrollHeight + 20 + 'px';
+    }
+  });
+});
 
+// yourData_FORM==================
 
+document.querySelectorAll('.yourData-select-wrapper').forEach(wrapper => {
+    const display = wrapper.querySelector('.yourData-select-display');
+    const arrow = wrapper.querySelector('.calc_arrow_box');
+    const options = wrapper.querySelector('.yourData-select-options');
+    const hiddenInput = wrapper.querySelector('input[type="hidden"]');
 
+    display.addEventListener('click', () => {
+        wrapper.classList.toggle('open');
+        arrow.classList.toggle('open');
+    });
+
+    options.querySelectorAll('.option').forEach(option => {
+        option.addEventListener('click', () => {
+            const value = option.dataset.value;
+            const label = option.textContent;
+
+            display.textContent = label;
+            hiddenInput.value = value;
+            wrapper.classList.remove('open');
+        });
+    });
+
+    document.addEventListener('click', e => {
+        if (!wrapper.contains(e.target)) {
+            wrapper.classList.remove('open');
+        }
+    });
+});
