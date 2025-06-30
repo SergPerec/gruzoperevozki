@@ -2162,10 +2162,267 @@ img {
 }
 
 .transport_tabs {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
+}
+
+.transport_tabs .container {
+  max-width: 850px;
+}
+
+.transport_tabs .tabs__nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.transport_tabs .tabs__nav .tabs__link {
+  font-family: "Cyrvetica";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--text_color);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 14px 35px;
+  transition: all 0.45s;
+}
+
+.transport_tabs .tabs__nav .tabs__link span {
+  color: var(--textAccept_color);
+  transition: all 0.45s;
+}
+
+.transport_tabs .tabs__nav .tabs__link.tabs__link_active {
+  transition: all 0.45s;
+  background-color: var(--text_color);
+  color: #fff;
+}
+
+.transport_tabs .tabs__content .tabs__pane {
+  display: none;
+}
+
+.transport_tabs .tabs__content .tabs__pane.tabs__pane_show {
+  display: block;
+}
+
+.transport_tabl {
+  margin: 0 auto;
+  margin-top: 46px;
+  max-width: 500px;
+}
+
+.transport_tabl_topMob {
+  display: none;
+}
+
+.transport_tabl_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--text_color);
+}
+
+.transport_tabl_top p {
+  font-family: "Ubuntu_700";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.transport_tabl_inner {
+  margin-top: 20px;
+}
+
+.transport_tabl_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 8px;
+  padding-top: 12px;
+  border-bottom: 1px solid #0000001a;
+}
+
+.transport_tabl_item p,
+.transport_tabl_item span {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #000;
+}
+
+.transport_tabl_title {
+  display: none;
+}
+
+.transport_accord {
+  max-width: 1125px;
+  width: 100%;
+  margin: 150px auto;
+  padding: 28px 10px;
+  border-bottom: 1px solid var(--text_color);
+  border-top: 1px solid var(--text_color);
+}
+
+.transport_accord_inner {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.transport_accord_head {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: end;
+  cursor: pointer;
+}
+
+.transport_accord_head p {
+  max-width: 660px;
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+.transport_accord_box {
+  max-width: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transport_accord_box p {
+  color: #ff2c2c;
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.transport_accord_box a {
+  font-family: "Ubuntu_300";
+  font-size: 16px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--text_color);
+}
+
+.transport_accord_wrapper {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  padding: 0;
+}
+
+.transport_accord_text {
+  padding-top: 20px;
+  max-width: 660px;
+}
+
+.transport_accord_text p {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 /* transportPage-END======================== */
+
+/* contacts-START======================== */
+
+.contacts {
+  margin: 46px 0 150px;
+}
+
+.contacts_inner {
+  /* max-width: 800px; */
+  width: 100%;
+  /* margin: 0 auto; */
+  margin-left: 50px;
+}
+
+.contacts_title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.contacts_wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts_item {
+  max-width: 320px;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_item h3 {
+  margin-bottom: 27px;
+}
+
+.contacts_item p {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: #00000090;
+  margin-bottom: 8px;
+}
+
+.contacts_item a {
+  font-family: "Ubuntu_400";
+  font-size: 16px;
+  color: var(--text_color);
+  padding-bottom: 12px;
+  border-bottom: 1px solid #0942841a;
+  margin-bottom: 16px;
+}
+
+.contacts_item_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.contacts_item_box div {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts_item_box div a {
+  border: none;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.contacts_item_box div span {
+  color: #000;
+}
+
+.contacts_map {
+  max-width: 516px;
+  width: 100%;
+}
+
+.contacts_map_box {
+  max-width: 516px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 8px 17px 0px #0000000f;
+}
+
+.contacts_map_ymap {
+  max-width: 516px;
+  width: 100%;
+  height: 363px;
+}
+
+/* contacts-END======================== */
 
 /* ==================ADAPTIV============================= */
 
@@ -2229,6 +2486,10 @@ img {
 
   .transportPage {
     padding-right: 60px;
+  }
+
+  .contacts_inner {
+    margin: 0;
   }
 }
 
@@ -2351,6 +2612,39 @@ img {
 }
 
 @media (max-width: 900px) {
+  .contacts_item h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contacts_item p {
+    font-size: 12px;
+  }
+
+  .contacts_item a {
+    font-size: 12px;
+  }
+
+  .contacts_item_box div {
+    gap: 0;
+  }
+
+  .contacts_map {
+    max-width: 400px;
+  }
+
+  .contacts_map_ymap {
+    height: 300px;
+  }
+
+  .contacts_item {
+    max-width: 230px;
+  }
+
+  .contacts_item_box div span {
+    font-size: 12px;
+  }
+
   .transportPage_inner h3 {
     font-size: 20px;
   }
@@ -2411,7 +2705,21 @@ img {
   }
 }
 
+@media (max-width: 850px) {
+  .transport_tabs .tabs__nav .tabs__link {
+    font-size: 16px;
+  }
+
+  .transport_tabs .tabs__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 800px) {
+  .contacts {
+    margin-top: 130px;
+  }
   .transportPage {
     margin-top: 120px;
   }
@@ -2620,6 +2928,44 @@ img {
 }
 
 @media (max-width: 700px) {
+  .contacts_item {
+    max-width: 320px;
+  }
+  .contacts_item_box div span {
+    font-size: 16px;
+    text-align: center;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .contacts_item_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts_wrapper {
+    flex-direction: column;
+  }
+  .contacts_item_box div {
+    width: 100%;
+  }
+  .contacts_item_box div:first-child {
+    padding-top: 8px;
+    border-bottom: 1px solid #0942841a;
+  }
+  .contacts_title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .contacts_item h3 {
+    text-align: center;
+  }
+  .contacts_item p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .contacts_item a {
+    text-align: center;
+    font-size: 16px;
+  }
   .transportPage_bg {
     height: 300px;
   }
@@ -2790,11 +3136,27 @@ img {
 }
 
 @media (max-width: 600px) {
+  .transport_accord_head p,
+  .transport_accord_text p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .transport_accord_text {
+    padding: 20px 20px 20px 0;
+  }
+
+  .transport_accord_head {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .transportPage_bg_box {
     bottom: 80px;
     left: 30px;
     padding: 10px;
   }
+
   .transportPage_bg_box p {
     font-size: 12px;
     line-height: 16px;
@@ -2905,6 +3267,18 @@ img {
 }
 
 @media (max-width: 500px) {
+  .contacts_title {
+    font-size: 16px;
+  }
+  .contacts_item h3 {
+    font-size: 16px;
+  }
+  .contacts_item_box div span {
+    font-size: 14px;
+  }
+  .contacts_map_ymap {
+    height: 448px;
+  }
   .transportPage_bg {
     display: none;
   }
@@ -3441,6 +3815,45 @@ img {
   .transportPage {
     justify-content: center;
     padding: 0;
+  }
+
+  .transport_tabs .tabs__nav {
+    display: none;
+  }
+
+  .transport_tabs .tabs__content .tabs__pane {
+    display: block;
+  }
+
+  .transport_tabl_title {
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .transport_tabl_top {
+    display: none;
+  }
+
+  .transport_tabl_topMob {
+    display: flex;
+    justify-content: center;
+    font-family: "Ubuntu_700";
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .transport_tabl_item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transport_tabl_item p,
+  .transport_tabl_item span {
+    font-size: 14px;
   }
 }
 
